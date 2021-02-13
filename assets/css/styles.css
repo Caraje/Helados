@@ -1,0 +1,131 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #111111;
+    --rojo: #ED1E79;
+    --rojo2: #EA88B7;
+    --verdoso: #00ABA9;
+    --azul: #0045A8;
+    --grisClaro: #e0e0e0;
+    --naranja: #e08709;
+    --verde: #71b100;
+
+    --fuentePrimaria : 'Nunito', sans-serif;;
+    --fuenteSecundaria : 'Poppins', sans-serif;
+}
+/*
+-----------------------------------------------------------------------
+                            GLOBALES
+-----------------------------------------------------------------------
+*/
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--verdoso);
+    font-family: var(--fuentePrimaria);
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--rojo);
+    text-decoration: underline;
+    text-shadow: 3px 6px 14px -4px rgba(0,0,0,0.73);
+}
+
+h2{
+    text-align: left;
+    margin-bottom: 0.2rem;
+}
+
+    /*
+    -----------------------------------------------------------------------
+    app
+    -----------------------------------------------------------------------
+    */
+
+
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 120rem;
+    }
+    
+    .secc_preguntas{
+        background-color: var(--blanco);
+        box-shadow: 3px 6px 14px -4px rgba(0,0,0,0.73);
+        color: var(--rojo)
+        
+    }
+    .preguntas{
+        
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+    
+    .preguntas input {
+        width: 22rem;
+        height: 2rem;
+        background-color: var(--grisClaro);
+        border: none;
+        padding: 0 1rem;
+    }
+    
+    .btn {
+        display: inline-block;
+        text-align: center;
+        
+        margin: 0 0 2rem 84%;
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: var(--rojo);
+        color: var(--blanco);
+        text-align: right;
+    }
+    .btn:hover{
+        background-color: var(--verdoso);
+        transition: all 0.3s ease-in-out ;
+    }
+    
+
+    .contenedor_helados{
+        display: flex;
+        flex-direction: column;
+    }
+    .resultado__peticion{
+        display: flex;
+        justify-content:center;
+        height: 8rem;
+        margin-top: 2rem;
+        
+    }
+    
+    .img_helado  {
+        border: 3px solid var(--rojo);
+        border-right: none;
+        box-shadow: 3px 6px 14px -4px rgba(0,0,0,0.73);
+    }
+    
+    .texto_resultado {
+        border: 3px solid var(--rojo);
+        padding: 0.2rem 2rem;
+        background-color: var(--blanco);
+        box-shadow: 3px 6px 14px -4px rgba(0,0,0,0.73);
+        
+    }
+
+    .texto_resultado h2 {
+        color: var(--rojo);
+        text-decoration: underline;
+        margin-bottom: 0.2rem;
+    }

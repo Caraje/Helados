@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Helados</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+    <div class="cabecera">
+        <h1>Pedir Helados</h1>
+    </div>
+    <div class="secc_preguntas">
+        <div class="preguntas">
+
+            <div class="preguntas__nombre">
+                <h2>Nombre:</h2>
+                <input required type="text" name="cliente" id="cliente" placeholder="¿Cual es tu nombre?">
+            </div>
+            
+            <div class="preguntas__dinero">
+                <h2>Dinero:</h2>
+                <input required type="number" name="dinero" id="dinero" placeholder="¿Cuanto dineto tienes?">
+            </div>
+        </div>
+        <button class="btn">Enviar</button>
+    </div>
+
+    <div class="resultado">
+        <div class="contenedor_helados">
+            <div id="resultado_peticion" class="resultado__peticion">
+            </div>
+        </div>
+                
+    </div>
+
+    
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
